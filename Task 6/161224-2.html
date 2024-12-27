@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6-2</title>
+</head>
+
+<body>
+    <form action="./161224-2-response.html" method="get">
+        <fieldset>
+            <legend><b>Applicant Details</b></legend>
+            <label
+                for="Name">Name*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                type="text" name="Name" id="Name"
+                required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="F Name">Father's/Guardian's Name*</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"
+                name="F name" id="F Name" required><br><br>
+            <label for="dob">Date of
+                birth*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date"
+                name="dob" id="dob"
+                required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Gender*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="female" name="gender" required><label for="female">female</label>
+            <input type="radio" id="male" name="gender" required> <label for="male">male</label><br><br>
+            <label for="age">Age as
+                on:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                type="age" id="age" name="age"
+                required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="Aadhar">Aadhar
+                No:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                pattern="[0-9]{12}" name="Aadhar" id="Aadhar" required><br><br>
+            <label for="whatsapp">Whatsapp No*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                pattern="[\d]{10}" name="whatsapp" id="whatsapp"
+                required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="email">E-mail
+                Id*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                type="text" name="email" id="email" required><br><br>
+            <label
+                for="photo">Photo*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                type="file" name="photo" id="photo" required>
+        </fieldset>
+        <fieldset>
+            <legend><b>Residential Address Details</b></legend>
+            <label for="address">Applicant's address*</label>&nbsp;<textarea name="address" id="address"
+                required></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label
+                for="district">District*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="district" name="district">
+                
+                <option selected disabled>--select-- </option>
+                <option>Hyderabad</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+            <label
+                for="mandal">Mandal*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="mandal" id="mandal">
+                <option selected disabled>--select--</option>
+                <option>Hyderabad</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label
+                for="village">Village*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="village" id="village">
+                <option selected disabled>--select--</option>
+                <option>Hyderabad</option>
+            </select><br><br>
+            <label
+                for="pincode">Pincode*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                pattern="[0-9]{6}" name="pincode" id="pincode" required>
+        </fieldset>
+        <fieldset>
+            <legend><b>Pass Type Details</b></legend>
+            <label
+                for="city">City*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="city" id="city">
+                <option selected disabled>--select--</option>
+                <option>Hyderabad</option>
+            </select><br><br>
+            <label for="passtype">Pass
+                Type*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="passtype" id="passtype">
+                <option selected disabled>--select--</option>
+                <option>GREATER PASS</option>
+                <option>GENERAL ORDINARY ROUTE PASS</option>
+                <option>GENERAL METRO EXPRESS ROUTE PASS MLTY</option>
+                <option>ORDINARY PASS</option>
+                <option>METRO EXPRESS PASS</option>
+                <option>METRO DELUXE PASS</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend><b>Mode of Payment & Pass Collection</b></legend>
+            <label for="paymentmode">Payment Mode*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="paymentmode" id="paymentmode" required>
+                <option selected disabled>--select payment mode--</option>
+                <option>Payment at counter</option>
+            </select><br><br>
+            <label for="passdeliverymode">Pass Delivery Mode*</label>
+            <select name="passdeliverymode" id="passdeliverymode" required>
+                <option selected disabled>--Select Pass Delivery Mode--</option>
+                <option>At Counter</option>
+            </select><br><br>
+            <label for="center">Center at which you <br>want to collect
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="passtype" id="passtype">
+                    <option selected disabled>--select--</option>
+                    <option>Hyderabad</option>
+                    <option>Secunderabad</option>
+                </select><br> pass*</label>
+        </fieldset><br>
+        <center>
+            <img src="./captcha.png" width="100">&nbsp;<img src="./reload icon.png" width="20"><br><br>
+            <input pattern="wjr4s2" name="captcha" required><br><br>
+            <input type="submit">
+        </center>
+    </form>
+
+
+    <br><br><br>
+    <h3><a href="../Task 7/181224.html" target="_blank">Next Task</a></h3>
+</body>
+
+</html>
